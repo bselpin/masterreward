@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACE,OADK,CACL,UAAU,CAAC;EACT,WAAW,EAAE,UAAU;CACxB",
+    "sources": [
+        "reward.scss",
+        "Variable.scss"
+    ],
+    "names": [],
+    "file": "reward.css"
+}

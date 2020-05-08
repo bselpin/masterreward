@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/member.css" />
+    <link rel="stylesheet" href="css/reward.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="pre-loading"></div>
+    <!-- 공용헤더 -->
+    <header class="header">
+      <h1>
+        <a href="/"><img src="img/logo.svg" alt="" /></a>
+      </h1>
+      <div class="util-menu">
+        <ul>
+          <!-- a태그는 필요에 따라 삭제, 클래스 네임만 유지 -->
+          <li><a href="" class="util-btn">My profile</a></li>
+          <li><a href="index.html" class="util-btn">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 공용메뉴, 활성화시 menu-list에 active를 추가  -->
+    <div class="menu-panel">
+      <ul>
+        <li class="menu-list">
+          <span class="dashboard"></span><a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu-list">
+          <span class="referral"></span
+          ><a href="referral.html">Referrals Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="sponsor"></span><a href="sponsor.html">Sponsors Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="member"></span><a href="member.html">Member Search</a>
+        </li>
+        <li class="menu-list">
+          <span class="affiliated"></span
+          ><a href="affiliated.html">Affiliated Members</a>
+        </li>
+        <li class="menu-list active">
+          <span class="reward"></span><a href="reward.html">Reward</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 컨텐트가 로드되는 필드 -->
+    <div class="content-section member reward">
+      <div class="content-wrapper">
+        <p class="content-header">Reward</p>
+        <div class="util-menu">
+          <div class="left">
+            <div class="input-select">
+              <span class="label">Reward Type</span>
+              <select name="reward" id="reward">
+                <option value="all" selected>All</option>
+                <option value="referral">Referral Reward</option>
+                <option value="sponsor">Sponsor Reward</option>
+                <option value="matching">Matching Reward</option>
+                <option value="rollup">Rollup Reward</option>
+              </select>
+            </div>
+            <div class="input-select mt">
+              <span class="label">Week</span>
+              <select name="week" id="week">
+                <option value="20200427" selected>2020-04-27</option>
+                <option value="20200420">이전 14주간</option>
+                <option value="20200413">리스트에</option>
+                <option value="20200407">표시</option>
+              </select>
+            </div>
+          </div>
+          <div class="right">
+            <div class="input-select">
+              <span class="label">Rewarded</span>
+              <select name="rewardyn" id="rewardyn">
+                <<option value="all" selected>All</option>
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+            </div>
+            <div class="input-select mt">
+              <span class="label">Completed</span>
+              <select name="completeyn" id="completeyn">
+                <option value="all" selected>All</option>
+                <option value="y">Yes</option>
+                <option value="n">No</option>
+              </select>
+            </div>
+          </div>
+          <button class="search-btn sm">Search</button>
+        </div>
+        <div class="member-table">
+          <table>
+            <thead>
+              <tr>
+                <th>NO.</th>
+                <th>Membership Code</th>
+                <th>Member Name</th>
+                <th>Reward Type</th>
+                <th>Total Amount</th>
+                <th>Reward</th>
+                <th>Week Start Date</th>
+                <th>Week End Date</th>
+                <th>Create Date</th>
+                <th>Complete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>U000000010</td>
+                <td>Master</td>
+                <td>Referrals Reward</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19</td>
+                <td>2020-04-19 오후 11:58:00</td>
+                <td>N</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-wrapper">
+          <div class="pagination">
+            <ul>
+              <li>&lt;</li>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>&gt;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

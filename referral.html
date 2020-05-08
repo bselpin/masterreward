@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/referral.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="pre-loading"></div>
+
+    <!-- 공용헤더 -->
+    <header class="header">
+      <h1>
+        <a href="/"><img src="img/logo.svg" alt="" /></a>
+      </h1>
+      <div class="util-menu">
+        <ul>
+          <!-- a태그는 필요에 따라 수정 및 삭제, 클래스 네임만 유지 -->
+          <li><a class="util-btn" id="my-profile">My profile</a></li>
+          <li><a href="index.html" class="util-btn">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 공용메뉴, 활성화시 menu-list에 active를 추가  -->
+    <div class="menu-panel">
+      <ul>
+        <li class="menu-list">
+          <span class="dashboard"></span><a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu-list active">
+          <span class="referral"></span
+          ><a href="referral.html">Referrals Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="sponsor"></span><a href="sponsor.html">Sponsors Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="member"></span><a href="member.html">Member Search</a>
+        </li>
+        <li class="menu-list">
+          <span class="affiliated"></span
+          ><a href="affiliated.html">Affiliated Members</a>
+        </li>
+        <li class="menu-list">
+          <span class="reward"></span><a href="reward.html">Reward</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 컨텐트가 로드되는 필드 -->
+    <div class="content-section referral">
+      <div class="content-wrapper">
+        <p class="content-header">Referrals Tree</p>
+        <div class="util-menu">
+          <button class="search-btn sm">Search</button>
+          <!-- 검색결과 바인딩, 괄호안의 내용은 프론트에선 삭제 -->
+          <div class="search-result">
+            <span>-(회원번호)</span>
+            <span class="divider">/</span>
+            <span>-(회원명)</span>
+            <span class="divider">/</span>
+            <span>-(국가)</span>
+          </div>
+          <div class="search-select">
+            <label for="level">Level</label>
+            <select name="level" id="level">
+              <option value="2">2</option>
+              <option value="~">~</option>
+              <option value="50">50</option>
+            </select>
+            <button class="search-btn"></button>
+          </div>
+        </div>
+
+        <div id="tree" class="tree-section"></div>
+      </div>
+    </div>
+
+    <!-- 회원 검색에 사용되는 패널 -->
+    <div class="search-panel"></div>
+
+    <script src="js/vendor/raphael.js"></script>
+    <script src="js/Treant.js"></script>
+    <script src="js/config.js"></script>
+    <script>
+      let tree = new Treant(chart_config);
+      let search = document.getElementsByClassName("sm");
+    </script>
+  </body>
+</html>

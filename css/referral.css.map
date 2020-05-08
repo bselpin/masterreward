@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,KAAK,EAAE,iBAAiB;EACxB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG,CAAC,KAAK,CCFX,OAAO;EDGb,MAAM,EAAE,qBAAqB;EAC7B,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,IAAI;EACV,QAAQ,EAAE,IAAI;CACf",
+    "sources": [
+        "referral.scss",
+        "Variable.scss"
+    ],
+    "names": [],
+    "file": "referral.css"
+}

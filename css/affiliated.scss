@@ -1,0 +1,22 @@
+@import "Variable.scss";
+
+.affiliated {
+  .chart-wrapper {
+    height: calc(50% - 6rem);
+    margin-top: 4.5rem;
+    position: relative;
+
+    h2 {
+      font-size: 1rem;
+      color: #fff;
+      padding: 0.35rem 0.8rem;
+      background: $pri;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    &.bottom {
+      margin-top: 5rem;
+    }
+  }
+}

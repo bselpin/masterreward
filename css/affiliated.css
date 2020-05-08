@@ -1,0 +1,19 @@
+.affiliated .chart-wrapper {
+  height: calc(50% - 6rem);
+  margin-top: 4.5rem;
+  position: relative;
+}
+
+.affiliated .chart-wrapper h2 {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.35rem 0.8rem;
+  background: #6428dc;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.affiliated .chart-wrapper.bottom {
+  margin-top: 5rem;
+}
+/*# sourceMappingURL=affiliated.css.map */

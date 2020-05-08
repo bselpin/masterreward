@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="signup-section">
+      <p class="signup-title">Sign up</p>
+
+      <!-- 현재 단계에는 active, 이미 지난 단계에는 done 클래스 추가 -->
+      <div class="signup-progress">
+        <div class="progress done">
+          <p class="number">1</p>
+          <p class="label">
+            Accept <br />
+            the terms
+          </p>
+        </div>
+        <div class="progress done">
+          <p class="number">2</p>
+          <p class="label">
+            Identity <br />
+            verification
+          </p>
+        </div>
+        <div class="progress done">
+          <p class="number">3</p>
+          <p class="label">
+            Enter personal <br />
+            information
+          </p>
+        </div>
+        <div class="progress active">
+          <p class="number">4</p>
+          <p class="label">Complete</p>
+        </div>
+
+        <!-- 단계에 따라 bar-01 ~ bar-04까지 클래스 이름 교체 -->
+        <div class="progress-bar bar-04"></div>
+      </div>
+      <div class="signup-wrapper complete">
+        <div class="comp-image">
+          <img src="../img/complete.svg" alt="" />
+        </div>
+        <p class="praise">Welcome to Master Reward membership!</p>
+        <p>Your membership ID is</p>
+        <p class="your-id">abcde1</p>
+
+        <!-- 프론트 작업시 버튼내/외에 있는 a태그는 불필요하므로 삭제 -->
+        <button class="login-btn">
+          <a href="../dashboard.html">Log in</a>
+        </button>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>

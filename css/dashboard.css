@@ -1,0 +1,604 @@
+.dashboard .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+
+.dashboard .user-info .user-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  background: #6428dc;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dashboard .user-info .user-name,
+.dashboard .user-info .user-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #6428dc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.dashboard .user-info .user-code {
+  margin-left: 1rem;
+}
+
+.dashboard .user-info .name,
+.dashboard .user-info .code {
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+}
+
+.dashboard .dashboard {
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+  width: calc(100% - 5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .dashboard .left {
+  width: calc(50% - 0.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .dashboard .left .card {
+  width: calc(50% - 0.5rem);
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  height: 12rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+          box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+}
+
+.dashboard .dashboard .left .card.bottom {
+  margin-top: 1rem;
+}
+
+.dashboard .dashboard .left .card .card-text {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.dashboard .dashboard .left .card-double {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+          box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired,
+.dashboard .dashboard .left .card-double .card-remain {
+  width: 50%;
+  position: relative;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .card-title-box,
+.dashboard .dashboard .left .card-double .card-remain .card-title-box {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .card-title-en,
+.dashboard .dashboard .left .card-double .card-remain .card-title-en {
+  font-size: 1rem;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .card-title-ko,
+.dashboard .dashboard .left .card-double .card-remain .card-title-ko {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .card-text,
+.dashboard .dashboard .left .card-double .card-remain .card-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 3rem 0 3.5rem;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .card-text.reward-text,
+.dashboard .dashboard .left .card-double .card-remain .card-text.reward-text {
+  padding: 2rem 0 0;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .req-reward,
+.dashboard .dashboard .left .card-double .card-remain .req-reward {
+  position: absolute;
+  border: 1px solid #6428dc;
+  color: #6428dc;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  padding: 0.4rem 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 1.75rem;
+  font-size: 0.9rem;
+}
+
+.dashboard .dashboard .left .card-double .card-acquired .req-reward:hover,
+.dashboard .dashboard .left .card-double .card-remain .req-reward:hover {
+  border-color: #14e15f;
+  border-radius: 18px;
+  background: #14e15f;
+  color: #fff;
+}
+
+.dashboard .dashboard .left .card-title-box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.dashboard .dashboard .left .card-title-en {
+  color: #6428dc;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.dashboard .dashboard .left .card-title-ko {
+  color: #9a9aba;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.dashboard .dashboard .right {
+  width: calc(50% - 0.5rem);
+  background: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+          box-shadow: 0 0 15px rgba(20, 40, 80, 0.15);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 calc(2rem + 2.5vw);
+}
+
+.dashboard .dashboard .right .left-tree,
+.dashboard .dashboard .right .tree-label,
+.dashboard .dashboard .right .right-tree {
+  width: 33.33%;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.dashboard .dashboard .right .left-tree .tree-title-en,
+.dashboard .dashboard .right .tree-label .tree-title-en,
+.dashboard .dashboard .right .right-tree .tree-title-en {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.dashboard .dashboard .right .left-tree .tree-title-ko,
+.dashboard .dashboard .right .tree-label .tree-title-ko,
+.dashboard .dashboard .right .right-tree .tree-title-ko {
+  font-size: 0.8rem;
+  color: #9a9aba;
+}
+
+.dashboard .dashboard .right .left-tree .label,
+.dashboard .dashboard .right .tree-label .label,
+.dashboard .dashboard .right .right-tree .label {
+  font-weight: 700;
+  white-space: nowrap;
+  word-break: keep-all;
+  position: relative;
+}
+
+.dashboard .dashboard .right .left-tree .label:after,
+.dashboard .dashboard .right .tree-label .label:after,
+.dashboard .dashboard .right .right-tree .label:after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.dashboard .dashboard .right .left-tree .label:before,
+.dashboard .dashboard .right .tree-label .label:before,
+.dashboard .dashboard .right .right-tree .label:before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.dashboard .dashboard .right .left-tree .tree-amount,
+.dashboard .dashboard .right .tree-label .tree-amount,
+.dashboard .dashboard .right .right-tree .tree-amount {
+  height: calc(100% - 8.75rem);
+  padding-top: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2.25rem;
+}
+
+.dashboard .dashboard .right .left-tree .tree-amount .amount,
+.dashboard .dashboard .right .tree-label .tree-amount .amount,
+.dashboard .dashboard .right .right-tree .tree-amount .amount {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.dashboard .dashboard .right .tree-label {
+  height: calc(100% - 14rem);
+  padding-top: 7.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.dashboard .dashboard .right .sales-title-box {
+  color: #6428dc;
+  font-weight: 700;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.25rem;
+}
+
+.dashboard .dashboard .right .sales-title-box .sales-title-ko {
+  font-size: 0.85rem;
+  color: #9a9aba;
+}
+
+.profile-section {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(30, 20, 50, 0.65);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.profile-section.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-section .profile-wrapper {
+  width: 76%;
+  height: 84vh;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(20, 30, 80, 0.35);
+          box-shadow: 0 0 20px rgba(20, 30, 80, 0.35);
+  border-radius: 8px;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.profile-section .profile-wrapper .profile-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  border-bottom: 1px solid #000;
+}
+
+.profile-section .profile-wrapper .profile-header .title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-left: 2rem;
+}
+
+.profile-section .profile-wrapper .close-btn {
+  background: url("../img/close-btn.svg") center center no-repeat;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  cursor: pointer;
+  top: 1.5rem;
+  right: 2rem;
+}
+
+.profile-section .profile-wrapper .profile {
+  width: 100%;
+  height: calc(84vh - 5rem);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 2rem 10vw;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-section .profile-wrapper .profile.hidden {
+  display: none;
+}
+
+.profile-section .profile-wrapper .profile .title-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.profile-section .profile-wrapper .profile .left {
+  width: 50%;
+  margin-right: 3rem;
+  height: 10rem;
+}
+
+.profile-section .profile-wrapper .profile .left .left-wrapper {
+  border-top: 4px solid #14e15f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-section .profile-wrapper .profile .left ul {
+  border-top: 4px solid #14e15f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.profile-section .profile-wrapper .profile .left li {
+  padding: 0.75rem;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-section .profile-wrapper .profile .left li .label {
+  text-align: right;
+  width: 40%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.profile-section .profile-wrapper .profile .left li .value {
+  display: inline-block;
+  width: 60%;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.profile-section .profile-wrapper .profile .left .edit-btn {
+  padding: 0.35rem 2rem;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.profile-section .profile-wrapper .profile .right {
+  width: 50%;
+}
+
+.profile-section .profile-wrapper .profile .right .right-wrapper {
+  border-top: 4px solid #14e15f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-section .profile-wrapper .profile .right .right-box {
+  padding: 5.05rem;
+  margin: 0 auto;
+}
+
+.profile-section .profile-wrapper .profile .right .right-box p {
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.profile-section .profile-wrapper .profile .right .right-box.top {
+  border-bottom: 1px solid #000;
+}
+
+.profile-section .profile-wrapper .profile .right .right-box .member-number {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.profile-section .profile-wrapper .edit-profile {
+  display: none;
+}
+
+.profile-section .profile-wrapper .edit-profile.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-section .profile-wrapper .edit-profile .left-wrapper,
+.profile-section .profile-wrapper .edit-profile .right-wrapper {
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
+
+.profile-section .profile-wrapper .edit-profile .input-div {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-section .profile-wrapper .edit-profile .input-div label {
+  width: 7rem;
+  text-align: right;
+  font-weight: 700;
+}
+
+.profile-section .profile-wrapper .edit-profile .input-div input {
+  width: calc(100% - 7rem);
+  margin-left: 1.5rem;
+  border: 1px solid #9a9aba;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+}
+
+.profile-section .profile-wrapper .edit-profile .input-div input:focus {
+  border-color: #6428dc;
+}
+
+.profile-section .profile-wrapper .edit-profile .error {
+  margin: 1rem auto;
+}
+
+.profile-section .profile-wrapper .edit-profile .marketing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.profile-section .profile-wrapper .edit-profile .marketing span {
+  font-weight: 700;
+}
+
+.profile-section .profile-wrapper .edit-profile .save-btn {
+  position: absolute;
+  padding: 0.35rem 2rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  bottom: 5rem;
+}
+
+.header.blur,
+.menu-panel.blur,
+.content-section.blur {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+/*# sourceMappingURL=dashboard.css.map */

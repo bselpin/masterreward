@@ -1,0 +1,23 @@
+$pri: #6428dc;
+$sub: #14e15f;
+$gray: #efefff;
+$gray2: #c1c1df;
+$gray3: #9a9aba;
+$red: #fa106a;
+$grays: #f5f5fc;
+
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1367px;
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

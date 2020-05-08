@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="signup-section">
+      <p class="signup-title">Sign up</p>
+
+      <!-- 현재 단계에는 active, 이미 지난 단계에는 done 클래스 추가 -->
+      <div class="signup-progress">
+        <div class="progress active">
+          <p class="number">1</p>
+          <p class="label">
+            Accept <br />
+            the terms
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">2</p>
+          <p class="label">
+            Identity <br />
+            verification
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">3</p>
+          <p class="label">
+            Enter personal <br />
+            information
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">4</p>
+          <p class="label">Complete</p>
+        </div>
+
+        <!-- 단계에 따라 bar-01 ~ bar-04까지 클래스 이름 교체 -->
+        <div class="progress-bar bar-01"></div>
+        <a href="../index.html" class="close-btn"></a>
+      </div>
+
+      <div class="signup-wrapper">
+        <p class="title">Terms of Use</p>
+        <div class="terms-box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          nesciunt nobis dolore quis, labore saepe praesentium enim odio id
+          totam iste assumenda quod, ipsa rem! Omnis hic iure fugit
+          voluptatibus. Veniam doloribus, fugiat iure nulla ipsum ipsa dolores,
+          necessitatibus rerum magnam quam ipsam recusandae enim odit sit,
+          praesentium corporis. Quibusdam sapiente dolor doloremque corrupti in
+          aliquam expedita alias numquam officiis. Odit minus, eaque fugiat
+          repellat, pariatur temporibus exercitationem obcaecati explicabo
+          voluptatem suscipit excepturi, veniam expedita est tempore? Doloremque
+          dolorem tempore provident repudiandae labore, veniam minima sed
+          possimus nihil earum perferendis! Iure doloremque fuga quia? Eius,
+          officiis fugiat! Officiis consequuntur eum illum impedit excepturi
+          reprehenderit eaque deserunt fugit praesentium quod asperiores
+          adipisci, necessitatibus fuga ipsa exercitationem consectetur alias
+          vel. Unde, qui. Assumenda aut rem praesentium enim eum accusantium
+          dolor voluptate eligendi rerum architecto velit at, id natus nihil
+          magni voluptatum voluptatibus consequuntur quibusdam maxime unde nisi
+          cumque quidem voluptas modi. Corporis? Dolorem, veritatis unde
+          repudiandae impedit odit dolore officiis modi itaque optio doloremque
+          eos consectetur velit cumque libero porro ipsa deserunt voluptatum
+          adipisci qui magnam eum, eligendi praesentium sed. Consequuntur, quam?
+          Nam ab autem sapiente quas enim minima aliquid! Aut ut blanditiis
+          maiores dolores possimus delectus ducimus atque quidem tempora
+          laudantium quo modi sequi impedit ipsum non, sunt iusto, aliquid quis?
+          At praesentium, aut alias eius minus, fugit officia hic voluptatum
+          blanditiis excepturi nobis nihil sapiente vitae dolorem repellat,
+          velit amet! Facere nesciunt rem libero, magnam dolorum ipsa
+          perspiciatis a consectetur. Vitae harum veniam, numquam ab ad facere
+          est explicabo natus non corporis quibusdam neque reprehenderit
+          repellat, culpa placeat! Iusto ut earum repudiandae qui aliquam aut
+          eum voluptas id reprehenderit voluptatem? Id odio ipsa non
+          necessitatibus, ducimus saepe iusto, in veniam nisi error sed vitae
+          eligendi iure et unde facilis veritatis. Fuga suscipit mollitia
+          voluptatibus, eaque impedit optio vel ea veritatis?
+        </div>
+        <div class="agreement">
+          <span>Do you agree?</span><span class="required">(required)</span>
+          <input
+            type="checkbox"
+            id="term"
+            class="checkbox"
+            onclick="isReveal()"
+            required
+          />
+          <label for="term"></label>
+        </div>
+      </div>
+
+      <div class="signup-wrapper policy">
+        <p class="title">Pricate Policy</p>
+        <div class="terms-box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          nesciunt nobis dolore quis, labore saepe praesentium enim odio id
+          totam iste assumenda quod, ipsa rem! Omnis hic iure fugit
+          voluptatibus. Veniam doloribus, fugiat iure nulla ipsum ipsa dolores,
+          necessitatibus rerum magnam quam ipsam recusandae enim odit sit,
+          praesentium corporis. Quibusdam sapiente dolor doloremque corrupti in
+          aliquam expedita alias numquam officiis. Odit minus, eaque fugiat
+          repellat, pariatur temporibus exercitationem obcaecati explicabo
+          voluptatem suscipit excepturi, veniam expedita est tempore? Doloremque
+          dolorem tempore provident repudiandae labore, veniam minima sed
+          possimus nihil earum perferendis! Iure doloremque fuga quia? Eius,
+          officiis fugiat! Officiis consequuntur eum illum impedit excepturi
+          reprehenderit eaque deserunt fugit praesentium quod asperiores
+          adipisci, necessitatibus fuga ipsa exercitationem consectetur alias
+          vel. Unde, qui. Assumenda aut rem praesentium enim eum accusantium
+          dolor voluptate eligendi rerum architecto velit at, id natus nihil
+          magni voluptatum voluptatibus consequuntur quibusdam maxime unde nisi
+          cumque quidem voluptas modi. Corporis? Dolorem, veritatis unde
+          repudiandae impedit odit dolore officiis modi itaque optio doloremque
+          eos consectetur velit cumque libero porro ipsa deserunt voluptatum
+          adipisci qui magnam eum, eligendi praesentium sed. Consequuntur, quam?
+          Nam ab autem sapiente quas enim minima aliquid! Aut ut blanditiis
+          maiores dolores possimus delectus ducimus atque quidem tempora
+          laudantium quo modi sequi impedit ipsum non, sunt iusto, aliquid quis?
+          At praesentium, aut alias eius minus, fugit officia hic voluptatum
+          blanditiis excepturi nobis nihil sapiente vitae dolorem repellat,
+          velit amet! Facere nesciunt rem libero, magnam dolorum ipsa
+          perspiciatis a consectetur. Vitae harum veniam, numquam ab ad facere
+          est explicabo natus non corporis quibusdam neque reprehenderit
+          repellat, culpa placeat! Iusto ut earum repudiandae qui aliquam aut
+          eum voluptas id reprehenderit voluptatem? Id odio ipsa non
+          necessitatibus, ducimus saepe iusto, in veniam nisi error sed vitae
+          eligendi iure et unde facilis veritatis. Fuga suscipit mollitia
+          voluptatibus, eaque impedit optio vel ea veritatis?
+        </div>
+        <div class="agreement">
+          <span>Do you agree?</span><span class="required">(required)</span>
+          <input
+            type="checkbox"
+            id="policy"
+            class="checkbox"
+            onclick="isReveal()"
+            required
+          />
+          <label for="policy"></label>
+        </div>
+        <div class="marketing">
+          <span>Are you agree to using your information to marketing?</span
+          ><span class="optional">(optional)</span>
+          <input type="checkbox" id="marketing" class="checkbox" />
+          <label for="marketing"></label>
+        </div>
+      </div>
+
+      <!-- 필수 체크박스에 체크가 완료되면 active 클래스 추가로 다음 버튼 노출 -->
+      <a href="identity.html" class="next-btn"><span>NEXT</span></a>
+    </div>
+
+    <script>
+      let chk1 = document.getElementById("term");
+      let chk2 = document.getElementById("policy");
+      let nextBtn = document.getElementsByClassName("next-btn")[0];
+
+      const isReveal = () => {
+        if (chk1.checked === true && chk2.checked === true) {
+          nextBtn.classList.add("active");
+        } else {
+          nextBtn.classList.remove("active");
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+.member .left {
+  width: calc(25rem + 10vw);
+}
+
+.member .left select {
+  padding: 0.25rem 0.5rem;
+  height: 2rem;
+  width: 11rem;
+}
+
+.member .right {
+  width: 50%;
+}
+
+.member .right select {
+  padding: 0.25rem 0.5rem;
+  height: 2rem;
+  width: 11rem;
+}
+
+.member .input-calendar,
+.member .input-name,
+.member .input-position,
+.member .input-class,
+.member .input-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.member .input-calendar.mt,
+.member .input-name.mt,
+.member .input-position.mt,
+.member .input-class.mt,
+.member .input-select.mt {
+  margin-top: 1rem;
+}
+
+.member .input-calendar .calendar,
+.member .input-name .calendar,
+.member .input-position .calendar,
+.member .input-class .calendar,
+.member .input-select .calendar {
+  cursor: pointer;
+  height: 2rem;
+  border: 1px solid #9a9aba;
+  padding: 0.35rem 1.02rem;
+  font-size: 0.9rem;
+}
+
+.member .label {
+  font-weight: 700;
+  width: 10rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.member .input-name,
+.member .input-position {
+  margin-top: 1rem;
+}
+
+.member .input-name .name,
+.member .input-position .name {
+  border: 1px solid #9a9aba;
+  height: 2rem;
+  width: 15.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.member .util-menu .search-btn {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.member .member-table {
+  width: calc(100% - 4rem);
+  position: absolute;
+  border: 1px solid #c1c1df;
+  border-top: 1px solid #000;
+  height: calc(100vh - 27.25rem);
+  bottom: 5.5rem;
+  left: 2rem;
+  overflow-y: auto;
+}
+
+.member .member-table table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  position: relative;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+}
+
+.member .member-table table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  border-top: none;
+  font-weight: 700;
+  background: #6428dc;
+  color: #fff;
+}
+
+.member .member-table table th:first-child {
+  border-left: none;
+}
+
+.member .member-table table th:last-child {
+  border-right: none;
+}
+
+.member .member-table table tr:nth-child(2n) {
+  background: #f5f5fc;
+}
+
+.member .member-table table td {
+  padding: 0.5rem;
+  border: 1px solid #9a9aba;
+  font-weight: 300;
+}
+
+.member .member-table table td:first-child {
+  border-left: none;
+}
+
+.member .member-table table td:last-child {
+  border-right: none;
+}
+
+.member .page-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 1.65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.member .page-wrapper .pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.member .page-wrapper .pagination li {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #efefff;
+  padding: 0.35rem 0;
+  width: 2.35rem;
+  color: #9a9aba;
+  margin: 0 0.15rem;
+}
+
+.member .page-wrapper .pagination li.active {
+  background: #6428dc;
+  color: #fff !important;
+  border-color: #6428dc;
+}
+
+.member .page-wrapper .pagination li:hover {
+  color: #6428dc;
+  border-color: #6428dc;
+}
+/*# sourceMappingURL=member.css.map */

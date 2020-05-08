@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="signup-section">
+      <p class="signup-title">Sign up</p>
+
+      <!-- 현재 단계에는 active, 이미 지난 단계에는 done 클래스 추가 -->
+      <div class="signup-progress">
+        <div class="progress done">
+          <p class="number">1</p>
+          <p class="label">
+            Accept <br />
+            the terms
+          </p>
+        </div>
+        <div class="progress done">
+          <p class="number">2</p>
+          <p class="label">
+            Identity <br />
+            verification
+          </p>
+        </div>
+        <div class="progress active">
+          <p class="number">3</p>
+          <p class="label">
+            Enter personal <br />
+            information
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">4</p>
+          <p class="label">Complete</p>
+        </div>
+
+        <!-- 단계에 따라 bar-01 ~ bar-04까지 클래스 이름 교체 -->
+        <div class="progress-bar bar-03"></div>
+        <a href="../index.html" class="close-btn"></a>
+      </div>
+      <div class="signup-wrapper identity">
+        <div class="signup-box">
+          <p class="title">Personl Information</p>
+        </div>
+        <div class="signup-inputs">
+          <div class="input-div">
+            <input
+              type="text"
+              id="veri-code"
+              placeholder="Please verify certification code"
+              required
+            />
+            <label for="veri-code">Certification Code</label>
+
+            <!-- 확인이 완료되면 조작이 필요하지 않은 버튼은 disabled처리, 스타일변경 -->
+            <button class="confirm-btn" disabled>Confirm</button>
+
+            <!--인풋 검증 성공시에는 div.done을 렌더 -->
+            <div class="done"></div>
+          </div>
+
+          <div class="input-div">
+            <input type="text" id="id" placeholder="Please enter ID" required />
+            <label for="id">ID</label>
+            <button class="confirm-btn">Check</button>
+          </div>
+
+          <div class="halves">
+            <div class="input-div half">
+              <input
+                type="text"
+                id="password"
+                placeholder="Please enter password"
+                required
+              />
+              <label for="password">Password</label>
+            </div>
+
+            <div class="input-div half">
+              <!-- 모든 인풋에 class.error를 추가하면 error스타일로 변경 -->
+              <input
+                type="text"
+                id="password-check"
+                placeholder="Please enter password again"
+                class="error"
+                required
+              />
+              <label for="password-check">Password Check</label>
+            </div>
+          </div>
+
+          <!-- 패스워드 확인이 틀릴시에 active를 추가 -->
+          <div class="pass-error active">
+            These password don't match, try again
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="user-info">
+            <div class="infos">
+              <p class="label">Your name</p>
+              <p class="text">김성운</p>
+            </div>
+            <div class="infos">
+              <p class="info">Your phone NO.</p>
+              <p class="text">010-1234-4567</p>
+            </div>
+          </div>
+          <div class="user-email">
+            <p class="label">Your e-mail</p>
+            <p class="text">sample@naver.com</p>
+          </div>
+
+          <div class="user-gender">
+            <p class="label">Choose your gender</p>
+            <div class="genders">
+              <div class="gender female">
+                <img src="../img/female.svg" alt="" />
+                <span>female</span>
+              </div>
+              <div class="gender male">
+                <img src="../img/male.svg" alt="" />
+                <span>male</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-div">
+            <input
+              type="text"
+              id="id"
+              placeholder="Please enter password again"
+              required
+            />
+            <label for="id">Birth Date</label>
+          </div>
+
+          <div class="marketing person">
+            <span>Do you agree to receive marketing information by E-mail?</span
+            ><span class="optional">(optional)</span>
+            <input type="checkbox" id="a-email" class="checkbox" />
+            <label for="a-email"></label>
+          </div>
+
+          <div class="marketing person">
+            <span>Do you agree to receive marketing information by SMS?</span
+            ><span class="optional">(optional)</span>
+            <input type="checkbox" id="a-sms" class="checkbox" />
+            <label for="a-sms"></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 필수 입력이 완료되면 active 클래스 추가로 다음 버튼 노출 -->
+      <a href="complete.html" class="next-btn active"><span>NEXT</span></a>
+    </div>
+
+    <script>
+      let gender = document.getElementsByClassName("gender");
+      let male = document.getElementsByClassName("male");
+      let female = document.getElementsByClassName("female");
+
+      const addGender = (el) => {
+        if (el.classList.contains("male")) {
+          el.classList.add("active");
+          female[0].classList.remove("active");
+        } else if (el.classList.contains("female")) {
+          el.classList.add("active");
+          male[0].classList.remove("active");
+        }
+      };
+
+      for (let i in gender) {
+        gender[i].addEventListener("click", (e) => {
+          addGender(e.currentTarget);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="signup-section">
+      <p class="signup-title">Sign up</p>
+
+      <!-- 현재 단계에는 active, 이미 지난 단계에는 done 클래스 추가 -->
+      <div class="signup-progress">
+        <div class="progress done">
+          <p class="number">1</p>
+          <p class="label">
+            Accept <br />
+            the terms
+          </p>
+        </div>
+        <div class="progress active">
+          <p class="number">2</p>
+          <p class="label">
+            Identity <br />
+            verification
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">3</p>
+          <p class="label">
+            Enter personal <br />
+            information
+          </p>
+        </div>
+        <div class="progress">
+          <p class="number">4</p>
+          <p class="label">Complete</p>
+        </div>
+
+        <!-- 단계에 따라 bar-01 ~ bar-04까지 클래스 이름 교체 -->
+        <div class="progress-bar bar-02"></div>
+        <a href="../index.html" class="close-btn"></a>
+      </div>
+      <div class="signup-wrapper identity">
+        <div class="signup-box">
+          <p class="title">
+            Identity verification
+            <span>- Master Wallet Membership Certification</span>
+          </p>
+          <p class="text">
+            First of all, check and enter your recommendation code and email
+            address on the Master Wallet > Setup menu. <br />
+            The authentication code will be sent to the email address you
+            entered, and you will need to enter the authentication code in the
+            next step.
+          </p>
+        </div>
+        <div class="signup-inputs">
+          <div class="input-div">
+            <input
+              type="text"
+              id="code"
+              placeholder="Please enter referral code"
+              onkeyup="isValue()"
+              required
+            />
+            <label for="code">Referral Code</label>
+          </div>
+
+          <div class="input-div">
+            <input
+              type="email"
+              id="email"
+              placeholder="Please enter your e-mail address"
+              onkeyup="isValue()"
+              required
+            />
+            <label for="email">E-mail Address</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 필수 입력이 완료되면 active 클래스 추가로 다음 버튼 노출 -->
+      <a href="personal.html" class="next-btn"><span>NEXT</span></a>
+    </div>
+    <script>
+      let code = document.getElementById("code");
+      let email = document.getElementById("email");
+      let nextBtn = document.getElementsByClassName("next-btn")[0];
+
+      const isValue = () => {
+        if (code.value && email.value) {
+          nextBtn.classList.add("active");
+        } else {
+          nextBtn.classList.remove("active");
+        }
+      };
+    </script>
+  </body>
+</html>

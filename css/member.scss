@@ -1,0 +1,164 @@
+@import "Variable.scss";
+
+.member {
+  .left {
+    width: calc(25rem + 10vw);
+    select {
+      padding: 0.25rem 0.5rem;
+      height: 2rem;
+      width: 11rem;
+    }
+  }
+  .right {
+    width: 50%;
+  }
+
+  .right {
+    select {
+      padding: 0.25rem 0.5rem;
+      height: 2rem;
+      width: 11rem;
+    }
+  }
+
+  .input-calendar,
+  .input-name,
+  .input-position,
+  .input-class,
+  .input-select {
+    display: flex;
+    align-items: center;
+
+    &.mt {
+      margin-top: 1rem;
+    }
+
+    .calendar {
+      cursor: pointer;
+      height: 2rem;
+      border: 1px solid $gray3;
+      padding: 0.35rem 1.02rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  .label {
+    font-weight: 700;
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .input-name,
+  .input-position {
+    margin-top: 1rem;
+
+    .name {
+      border: 1px solid $gray3;
+      height: 2rem;
+      width: 15.5rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .util-menu {
+    .search-btn {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+
+  .member-table {
+    width: calc(100% - 4rem);
+    position: absolute;
+    border: 1px solid $gray2;
+    border-top: 1px solid #000;
+    height: calc(100vh - 27.25rem);
+    bottom: 5.5rem;
+    left: 2rem;
+    overflow-y: auto;
+
+    table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      position: relative;
+      font-size: 0.95rem;
+      letter-spacing: 0;
+
+      th {
+        position: sticky;
+        top: 0;
+        padding: 0.5rem;
+        border: 1px solid #fff;
+        border-top: none;
+        font-weight: 700;
+        background: $pri;
+        color: #fff;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      tr {
+        &:nth-child(2n) {
+          background: $grays;
+        }
+      }
+
+      td {
+        padding: 0.5rem;
+        border: 1px solid $gray3;
+        font-weight: 300;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  .page-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 1.65rem;
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+      ul {
+        display: flex;
+      }
+      li {
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid $gray;
+        padding: 0.35rem 0;
+        width: 2.35rem;
+        color: $gray3;
+        margin: 0 0.15rem;
+
+        &.active {
+          background: $pri;
+          color: #fff !important;
+          border-color: $pri;
+        }
+
+        &:hover {
+          color: $pri;
+          border-color: $pri;
+        }
+      }
+    }
+  }
+}

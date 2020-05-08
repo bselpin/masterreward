@@ -1,0 +1,11 @@
+@import "Variable.scss";
+
+.tree-section {
+  width: calc(100% - 4rem);
+  position: absolute;
+  border: 1px solid $gray2;
+  height: calc(100vh - 20.5rem);
+  bottom: 2rem;
+  left: 2rem;
+  overflow: auto;
+}

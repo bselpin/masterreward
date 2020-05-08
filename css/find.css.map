@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "find.scss",
+        "Variable.scss"
+    ],
+    "names": [],
+    "file": "find.css"
+}

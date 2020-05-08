@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/affiliated.css" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="pre-loading"></div>
+    <!-- 공용헤더 -->
+    <header class="header">
+      <h1>
+        <a href="/"><img src="img/logo.svg" alt="" /></a>
+      </h1>
+      <div class="util-menu">
+        <ul>
+          <!-- a태그는 필요에 따라 수정 및 삭제, 클래스 네임만 유지 -->
+          <li><a href="" class="util-btn">My profile</a></li>
+          <li><a href="index.html" class="util-btn">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 공용메뉴, 활성화시 menu-list에 active를 추가  -->
+    <div class="menu-panel">
+      <ul>
+        <li class="menu-list">
+          <span class="dashboard"></span><a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu-list">
+          <span class="referral"></span
+          ><a href="referral.html">Referrals Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="sponsor"></span><a href="sponsor.html">Sponsors Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="member"></span><a href="member.html">Member Search</a>
+        </li>
+        <li class="menu-list active">
+          <span class="affiliated"></span
+          ><a href="affiliated.html">Affiliated Members</a>
+        </li>
+        <li class="menu-list">
+          <span class="reward"></span><a href="reward.html">Reward</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 컨텐트가 로드되는 필드 -->
+    <div class="content-section affiliated">
+      <div class="content-wrapper">
+        <p class="content-header">Affiliated Members</p>
+        <div class="chart-wrapper">
+          <h2>Members per position</h2>
+          <div id="position"></div>
+        </div>
+        <div class="chart-wrapper bottom">
+          <h2>onthly Membership Acquisition</h2>
+          <div id="membership"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      let optionsPos = {
+        chart: {
+          type: "bar",
+          height: "100%",
+        },
+        series: [
+          {
+            name: "sales",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+          },
+        ],
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        },
+      };
+
+      let optionsMem = {
+        chart: {
+          type: "line",
+          height: "100%",
+        },
+        series: [
+          {
+            name: "sales",
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+          },
+        ],
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        },
+      };
+
+      let chartPos = new ApexCharts(
+        document.querySelector("#position"),
+        optionsPos
+      );
+      let chartMem = new ApexCharts(
+        document.querySelector("#membership"),
+        optionsMem
+      );
+      chartPos.render();
+      chartMem.render();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="pre-loading"></div>
+
+    <!-- 공용헤더 -->
+    <header class="header">
+      <h1>
+        <a href="/"><img src="img/logo.svg" alt="" /></a>
+      </h1>
+      <div class="util-menu">
+        <ul>
+          <!-- a태그는 필요에 따라 수정 및 삭제, 클래스 네임만 유지 -->
+          <li><a class="util-btn" id="my-profile">My profile</a></li>
+          <li><a href="index.html" class="util-btn">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 공용메뉴, 활성화시 menu-list에 active를 추가  -->
+    <div class="menu-panel">
+      <ul>
+        <li class="menu-list active">
+          <span class="dashboard"></span><a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu-list">
+          <span class="referral"></span
+          ><a href="referral.html">Referrals Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="sponsor"></span><a href="sponsor.html">Sponsors Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="member"></span><a href="member.html">Member Search</a>
+        </li>
+        <li class="menu-list">
+          <span class="affiliated"></span
+          ><a href="affiliated.html">Affiliated Members</a>
+        </li>
+        <li class="menu-list">
+          <span class="reward"></span><a href="reward.html">Reward</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 컨텐트가 로드되는 필드 -->
+    <div class="content-section dashboard">
+      <div class="user-info">
+        <div class="user-name">
+          <span class="user-title">User Name</span>
+          <span class="name">김성운</span>
+        </div>
+        <div class="user-code">
+          <span class="user-title">My Code</span>
+          <span class="code">AB1C2D</span>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="left">
+          <div class="card">
+            <div class="card-title-box">
+              <p class="card-title-en">Number of Direct Recommendation</p>
+              <p class="card-title-ko">직접 추천 수</p>
+            </div>
+
+            <p class="card-text">7</p>
+          </div>
+          <div class="card">
+            <div class="card-title-box">
+              <p class="card-title-en">Number of Your Group</p>
+              <p class="card-title-ko">그룹 수</p>
+            </div>
+
+            <p class="card-text">25</p>
+          </div>
+          <div class="card bottom">
+            <div class="card-title-box">
+              <p class="card-title-en">Total Reward Earned</p>
+              <p class="card-title-ko">총 보상 획득</p>
+            </div>
+            <p class="card-text">$ 880</p>
+          </div>
+          <div class="card bottom">
+            <div class="card-title-box">
+              <p class="card-title-en">Payout pending</p>
+              <p class="card-title-ko">지불 보류</p>
+            </div>
+            <p class="card-text">$ 200</p>
+          </div>
+          <div class="card-double">
+            <div class="card-title-box">
+              <p class="card-title-en">My Account</p>
+              <p class="card-title-ko">나의 계좌</p>
+            </div>
+            <div class="card-acquired">
+              <div class="card-title-box">
+                <span class="card-title-en">Rewards Acquired</span>
+                <span class="card-title-ko">지급된 보상</span>
+              </div>
+              <p class="card-text">$ 680</p>
+            </div>
+            <div class="card-remain">
+              <div class="card-title-box">
+                <span class="card-title-en">Remaining Rewards</span>
+                <span class="card-title-ko">남은 보상</span>
+              </div>
+              <p class="card-text reward-text">$ 200</p>
+              <button class="req-reward">Send Request</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="sales-title-box">
+            <p class="sales-title-en">Sales Statistics</p>
+            <p class="sales-title-ko">수익 통계</p>
+          </div>
+          <div class="left-tree">
+            <div class="tree-title-box">
+              <p class="tree-title-en">Left Tree</p>
+              <p class="tree-title-ko">좌측트리</p>
+            </div>
+            <div class="tree-amount">
+              <p class="amount">$ 32,880</p>
+              <p class="amount">$ 1,500</p>
+              <p class="amount">$ 2,260</p>
+            </div>
+          </div>
+          <div class="tree-label">
+            <p class="label">Total</p>
+            <p class="label">This Week</p>
+            <p class="label">Balance</p>
+          </div>
+          <div class="right-tree">
+            <div class="tree-title-box">
+              <p class="tree-title-en">Left Tree</p>
+              <p class="tree-title-ko">좌측트리</p>
+            </div>
+            <div class="tree-amount">
+              <p class="amount">$ 32,880</p>
+              <p class="amount">$ 1,500</p>
+              <p class="amount">$ 2,260</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My profile을 눌렀을 경우 열리는 모달, 퍼블상에서는 dashboard.html에서만 작동 -->
+    <div class="profile-section">
+      <div class="profile-wrapper">
+        <div class="profile-header">
+          <div class="close-btn"></div>
+          <p class="title">My Profile</p>
+        </div>
+        <div class="profile">
+          <div class="left">
+            <p class="title-label">information</p>
+            <ul>
+              <li>
+                <span class="label">User name</span
+                ><span class="value">김성운</span>
+              </li>
+              <li>
+                <span class="label">User code</span
+                ><span class="value">AB1C2D</span>
+              </li>
+              <li>
+                <span class="label">E-mail</span
+                ><span class="value">sample@sample.com</span>
+              </li>
+              <li>
+                <span class="label">phone-number</span
+                ><span class="value">010-1234-5678</span>
+              </li>
+              <li>
+                <span class="label">Registration date</span
+                ><span class="value">2020.04.23</span>
+              </li>
+              <li>
+                <span class="label">Division</span>
+                <span class="value">Master Reward</span>
+              </li>
+              <li>
+                <span class="label">Position</span>
+                <span class="value">D</span>
+              </li>
+              <li>
+                <span class="label">Sponsor</span>
+                <span class="value">-</span>
+              </li>
+              <li>
+                <span class="label">Recommender</span
+                ><span class="value">-</span>
+              </li>
+            </ul>
+            <button class="edit-btn">Edit</button>
+          </div>
+          <div class="right">
+            <p class="title-label">Number of Affiliated Members</p>
+            <div class="right-wrapper">
+              <div class="right-box top">
+                <p>Number of Your Group</p>
+                <p class="member-number group">
+                  <span>57</span>
+                  <span class="divider">/</span>
+                  <span>57</span>
+                </p>
+              </div>
+              <div class="right-box">
+                <p>Number of Direct Recommendation</p>
+                <p class="member-number recommend">
+                  <span>6</span>
+                  <span class="divider">/</span>
+                  <span>6</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile edit-profile">
+          <div class="left">
+            <p class="title-label">Edit your information</p>
+            <div class="left-wrapper">
+              <div class="input-div">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" value="sample@sample.com" />
+              </div>
+              <div class="input-div">
+                <label for="phone">Phone number</label>
+                <input type="num" id="phone" value="010-1234-4567" />
+              </div>
+              <div class="marketing">
+                <span>Receive information email</span>
+                <input type="checkbox" id="a-email" class="checkbox" />
+                <label for="a-email"></label>
+              </div>
+              <div class="marketing">
+                <span>Receive information SMS</span>
+                <input type="checkbox" id="a-sms" class="checkbox" />
+                <label for="a-sms"></label>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <p class="title-label">Password</p>
+            <div class="right-wrapper">
+              <div class="input-div">
+                <label for="phone">Current password</label>
+                <input type="password" id="phone" value="" />
+              </div>
+              <div class="input-div">
+                <label for="phone">Change password</label>
+                <input type="password" id="phone" value="" />
+              </div>
+              <div class="input-div">
+                <label for="phone">Check password</label>
+                <input type="password" id="phone" value="" />
+              </div>
+              <p class="error">Password is incorrect</p>
+            </div>
+          </div>
+          <button class="save-btn">save</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let profile = document.getElementById("my-profile");
+      let close = document.getElementsByClassName("close-btn");
+      let section = document.getElementsByClassName("profile-section");
+      let header = document.getElementsByClassName("header");
+      let menuPanel = document.getElementsByClassName("menu-panel");
+      let contentSection = document.getElementsByClassName("content-section");
+      let editProfile = document.getElementsByClassName("edit-profile");
+      let profileClass = document.getElementsByClassName("profile");
+      let editBtn = document.getElementsByClassName("edit-btn");
+      let saveBtn = document.getElementsByClassName("save-btn");
+
+      profile.addEventListener("click", () => {
+        section[0].classList.toggle("active");
+        header[0].classList.toggle("blur");
+        menuPanel[0].classList.toggle("blur");
+        contentSection[0].classList.toggle("blur");
+        return false;
+      });
+
+      close[0].addEventListener("click", () => {
+        section[0].classList.toggle("active");
+        header[0].classList.toggle("blur");
+        menuPanel[0].classList.toggle("blur");
+        contentSection[0].classList.toggle("blur");
+        return false;
+      });
+
+      editBtn[0].addEventListener("click", () => {
+        profileClass[0].classList.toggle("hidden");
+        editProfile[0].classList.toggle("active");
+      });
+
+      saveBtn[0].addEventListener("click", () => {
+        profileClass[0].classList.toggle("hidden");
+        editProfile[0].classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

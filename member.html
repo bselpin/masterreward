@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/member.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Master Reward</title>
+  </head>
+
+  <body>
+    <div class="pre-loading"></div>
+    <!-- 공용헤더 -->
+    <header class="header">
+      <h1>
+        <a href="/"><img src="img/logo.svg" alt="" /></a>
+      </h1>
+      <div class="util-menu">
+        <ul>
+          <!-- a태그는 필요에 따라 수정 및 삭제, 클래스 네임만 유지 -->
+          <li><a href="" class="util-btn">My profile</a></li>
+          <li><a href="index.html" class="util-btn">Log out</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 공용메뉴, 활성화시 menu-list에 active를 추가  -->
+    <div class="menu-panel">
+      <ul>
+        <li class="menu-list">
+          <span class="dashboard"></span><a href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="menu-list">
+          <span class="referral"></span
+          ><a href="referral.html">Referrals Tree</a>
+        </li>
+        <li class="menu-list">
+          <span class="sponsor"></span><a href="sponsor.html">Sponsors Tree</a>
+        </li>
+        <li class="menu-list active">
+          <span class="member"></span><a href="member.html">Member Search</a>
+        </li>
+        <li class="menu-list">
+          <span class="affiliated"></span
+          ><a href="affiliated.html">Affiliated Members</a>
+        </li>
+        <li class="menu-list">
+          <span class="reward"></span><a href="reward.html">Reward</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 컨텐트가 로드되는 필드 -->
+    <div class="content-section member">
+      <div class="content-wrapper">
+        <p class="content-header">Member Search</p>
+        <div class="util-menu">
+          <div class="left">
+            <div class="input-calendar">
+              <span class="label">Registration Date</span>
+              <div class="calendars">
+                <span class="calendar">2020-04-17</span>
+                <span class="divider">~</span>
+                <span class="calendar">2020-04-27</span>
+              </div>
+            </div>
+            <div class="input-name">
+              <span class="label">Name</span>
+              <div class="names">
+                <input type="text" class="name" placeholder="Enter name" />
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="input-class">
+              <span class="label">Classification</span>
+              <select name="classification" id="classification">
+                <option value="all-rec" selected>All (Recommender)</option>
+                <option value="all-spon">All (Sponsor)</option>
+                <option value="first-rec">1st (Recommender)</option>
+                <option value="first-spon">1st (Sponsor)</option>
+              </select>
+            </div>
+            <div class="input-position">
+              <span class="label">Position</span>
+              <select name="classification" id="classification">
+                <option value="D" selected>D</option>
+                <option value="DD">DD</option>
+                <option value="DR">DR</option>
+                <option value="ED">ED</option>
+                <option value="NMD">NMD</option>
+                <option value="IMD">IMD</option>
+                <option value="GMD">GMD</option>
+              </select>
+            </div>
+          </div>
+          <button class="search-btn sm">Search</button>
+        </div>
+        <div class="member-table">
+          <table>
+            <thead>
+              <tr>
+                <th>NO.</th>
+                <th>Membership Number</th>
+                <th>Name</th>
+                <th>Registration Date</th>
+                <th>Division</th>
+                <th>Position</th>
+                <th>Sponsor</th>
+                <th>Recommender</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>000010</td>
+                <td>Park</td>
+                <td>2020-04-19</td>
+                <td>Master Reward</td>
+                <td>D</td>
+                <td>duck</td>
+                <td>sun</td>
+                <td>KOR</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-wrapper">
+          <div class="pagination">
+            <ul>
+              <li>&lt;</li>
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>&gt;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
